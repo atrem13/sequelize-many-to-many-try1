@@ -7,7 +7,7 @@ module.exports = function(express){
   router.get('/find/:tagId', tag.get);
   router.put('/edit/:tagId', tag.update);
   router.put('/delete/:tagId', tag.delete);
-  router.post('/search', tag.search);
+  router.get('/search', tag.search);
 
   return router;
 };

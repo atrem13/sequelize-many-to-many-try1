@@ -37,7 +37,7 @@ self.getAll = (req, res) => {
     if(data.length > 0){
       rs(res, data);
     }else{
-      re(res, e_get_id);
+      re(res, e_get_all);
     }
   }).catch((err) => {
     re(res, err);
